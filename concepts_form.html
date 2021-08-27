@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <title>PICT InC 2021</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/util.css">
+  <link rel="stylesheet" href="assets/css/form_style.css">
+</head>
+
+<body>
+
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Registration Form: Concepts</h2>
+          </div>
+        </div>
+        <div class="col-12">
+          <form id="contact" action="" method="post" class="">
+            <div class="row">
+              <div class="col-8 offset-2">
+                <fieldset>
+                  <label for="title" class="label">Title</label>
+                  <input name="title" type="text" class="form-control text-input" id="title" placeholder="Project Title"
+                    required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2">
+                <fieldset>
+                  <label for="domain" class="label">Domain</label>
+                  <select name="domain" type="text" class="form-control selectpicker" id="domain"  onchange="myFunction21(this)" required>
+                    <option value="" selected>Select Domain</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2">
+                <fieldset>
+                  <label for="subdomain" class="label">Sub-domain</label>
+                  <select name="subdomain" type="text" class="form-control selectpicker" id="subdomain" required>
+                    <option value="" selected>Please select domain first</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2">
+                <fieldset>
+                  <label for="" class="label">Type of Project</label><br>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="projecttype" class="radio-input" value="Open Software" required> Open
+                      Software
+                    </label>
+                  </div>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="projecttype" class="radio-input" value="Open Hardware" required> Open
+                      Hardware
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-4">
+                <fieldset>
+                  <label for="college" class="label">Name of College</label>
+                  <input name="college" type="text" class="form-control text-input" id="college"
+                    placeholder="College Name" required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2">
+                <fieldset>
+                  <label for="" class="label">Origin</label><br>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="nation" class="radio-input" onclick="disp(this)" value="National" required> National
+                    </label>
+                  </div>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="nation" class="radio-input" onclick="disp(this)" value="International" required>
+                      International
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-4">
+                <fieldset>
+                  <label for="place" class="label">Place</label>
+                  <div class="input-group">
+                    <input name="taluka" placeholder="City" class="form-control" id="city" type="text" required>
+                    <input name="district" placeholder="District" class="form-control" id="district" type="text"
+                      required>
+                    <select name="state" class="form-control selectpicker" id="state" required>
+                      <option value="">State</option>
+                      <option value="Andhra Pradesh">Andhra Pradesh</option>
+                      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                      <option value="Assam">Assam</option>
+                      <option value="Bihar">Bihar</option>
+                      <option value="Chhattisgarh">Chhattisgarh</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Goa">Goa</option>
+                      <option value="Gujarat">Gujarat</option>
+                      <option value="Haryana">Haryana</option>
+                      <option value="Himachal Pradesh">Himachal Pradesh</option>
+                      <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                      <option value="Jharkhand">Jharkhand</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Kerala">Kerala</option>
+                      <option value="Madhya Pradesh">Madhya Pradesh</option>
+                      <option value="Maharashtra">Maharashtra</option>
+                      <option value="Manipur">Manipur</option>
+                      <option value="Meghalaya">Meghalaya</option>
+                      <option value="Mizoram">Mizoram</option>
+                      <option value="Nagaland">Nagaland</option>
+                      <option value="Orissa">Orissa</option>
+                      <option value="Punjab">Punjab</option>
+                      <option value="Rajasthan">Rajasthan</option>
+                      <option value="Tamil Nadu">Tamil Nadu</option>
+                      <option value="Telangana">Telangana</option>
+                      <option value="Tripura">Tripura</option>
+                      <option value="Uttar Pradesh">Uttar Pradesh</option>
+                      <option value="Uttarakhand">Uttarakhand</option>
+                      <option value="West Bengal">West Bengal</option>
+                    </select>
+                    <input name="Country" placeholder="Country" value="India" id="country" class="form-control"
+                      type="text" required>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2">
+                <fieldset>
+                  <label for="" class="label">Select Locality</label><br>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="locality" value="Urban" required> Urban
+                    </label>
+                  </div>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="locality" value="Non Urban" required> Non-Urban
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-4">
+                <fieldset>
+                  <label for="noofmem" class="label">Number of Members</label>
+                  <select name="noofmem" type="text" class="form-control selectpicker" id="noofmem" onchange="myFunction(this)" required>
+                    <option>Please select Number of Members</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="name1" style="display:none;">
+                <fieldset>
+                  <label for="name11" class="label">Full Name #1</label>
+                  <input name="name11" type="text" class="form-control text-input" id="name11" placeholder="Full Name"
+                    required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="gender1" style="display:none;">
+                <fieldset>
+                  <label for="" class="label">Gender #1</label><br>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="gender11" class="radio-input radio1" value="Male" required> Male
+                    </label>
+                  </div>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="gender11" class="radio-input" value="Female" required> Female
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-4" id="email1" style="display:none;">
+                <fieldset>
+                  <label for="email11" class="label">Email #1</label>
+                  <input name="email11" type="text" class="form-control text-input" id="email11"
+                    placeholder="E-Mail Address" required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="phone1" style="display:none;">
+                <fieldset>
+                  <label for="phone11" class="label">Phone #1</label>
+                  <input name="phone11" type="text" class="form-control text-input" id="phone11"
+                    placeholder="8888888888" required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="file1" style="display:none;">
+                <fieldset>
+                  <label for="file11" class="label">Upload Student Proof #1 (file ext.: jpg, jpeg, png, pdf and max
+                    size: 200kb)</label>
+                  <input name="file11" type="file" class="form-control text-input" id="file11" required>
+                </fieldset>
+              </div>
+
+              <div class="col-8 offset-2 mt-2" id="name2" style="display:none;">
+                <fieldset>
+                  <label for="name22" class="label">Full Name #2</label>
+                  <input name="name22" type="text" class="form-control text-input" id="name22" placeholder="Full Name"
+                    required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="gender2" style="display:none;">
+                <fieldset>
+                  <label for="" class="label">Gender #2</label><br>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="gender22" class="radio-input radio1" value="Male" required> Male
+                    </label>
+                  </div>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="gender22" class="radio-input" value="Female" required> Female
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-4" id="email2" style="display:none;">
+                <fieldset>
+                  <label for="email22" class="label">Email #2</label>
+                  <input name="email22" type="text" class="form-control text-input" id="email22"
+                    placeholder="E-Mail Address" required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="phone2" style="display:none;">
+                <fieldset>
+                  <label for="phone22" class="label">Phone #2</label>
+                  <input name="phone22" type="text" class="form-control text-input" id="phone22"
+                    placeholder="8888888888" required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="file2" style="display:none;">
+                <fieldset>
+                  <label for="file22" class="label">Upload Student Proof #2 (file ext.: jpg, jpeg, png, pdf and max
+                    size: 200kb)</label>
+                  <input name="file22" type="file" class="form-control text-input" id="file22" required>
+                </fieldset>
+              </div>
+
+              <div class="col-8 offset-2 mt-2" id="name3" style="display:none;">
+                <fieldset>
+                  <label for="name33" class="label">Full Name #3</label>
+                  <input name="name33" type="text" class="form-control text-input" id="name33" placeholder="Full Name"
+                    required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="gender3" style="display:none;">
+                <fieldset>
+                  <label for="" class="label">Gender #3</label><br>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="gender33" class="radio-input radio1" value="Male" required> Male
+                    </label>
+                  </div>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="gender33" class="radio-input" value="Female" required> Female
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-4" id="email3" style="display:none;">
+                <fieldset>
+                  <label for="email33" class="label">Email #3</label>
+                  <input name="email33" type="text" class="form-control text-input" id="email33"
+                    placeholder="E-Mail Address" required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="phone3" style="display:none;">
+                <fieldset>
+                  <label for="phone33" class="label">Phone #3</label>
+                  <input name="phone33" type="text" class="form-control text-input" id="phone33"
+                    placeholder="8888888888" required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="file3" style="display:none;">
+                <fieldset>
+                  <label for="file33" class="label">Upload Student Proof #3 (file ext.: jpg, jpeg, png, pdf and max
+                    size: 200kb)</label>
+                  <input name="file33" type="file" class="form-control text-input" id="file33" required>
+                </fieldset>
+              </div>
+
+              <div class="col-8 offset-2 mt-2" id="name4" style="display:none;">
+                <fieldset>
+                  <label for="name44" class="label">Full Name #4</label>
+                  <input name="name44" type="text" class="form-control text-input" id="name44" placeholder="Full Name"
+                    required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="gender4" style="display:none;">
+                <fieldset>
+                  <label for="" class="label">Gender #4</label><br>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="gender44" class="radio-input radio1" value="Male" required> Male
+                    </label>
+                  </div>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="gender44" class="radio-input" value="Female" required> Female
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-4" id="email4" style="display:none;">
+                <fieldset>
+                  <label for="email44" class="label">Email #4</label>
+                  <input name="email44" type="text" class="form-control text-input" id="email44"
+                    placeholder="E-Mail Address" required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="phone4" style="display:none;">
+                <fieldset>
+                  <label for="phone44" class="label">Phone #4</label>
+                  <input name="phone44" type="text" class="form-control text-input" id="phone44"
+                    placeholder="8888888888" required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="file4" style="display:none;">
+                <fieldset>
+                  <label for="file44" class="label">Upload Student Proof #4 (file ext.: jpg, jpeg, png, pdf and max
+                    size: 200kb)</label>
+                  <input name="file44" type="file" class="form-control text-input" id="file44" required>
+                </fieldset>
+              </div>
+
+              <div class="col-8 offset-2 mt-2" id="name5" style="display:none;">
+                <fieldset>
+                  <label for="name55" class="label">Full Name #5</label>
+                  <input name="name55" type="text" class="form-control text-input" id="name55" placeholder="Full Name"
+                    required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="gender5" style="display:none;">
+                <fieldset>
+                  <label for="" class="label">Gender #5</label><br>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="gender55" class="radio-input radio1" value="Male" required> Male
+                    </label>
+                  </div>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="gender55" class="radio-input" value="Female" required> Female
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-4" id="email5" style="display:none;">
+                <fieldset>
+                  <label for="email55" class="label">Email #5</label>
+                  <input name="email55" type="text" class="form-control text-input" id="email55"
+                    placeholder="E-Mail Address" required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="phone5" style="display:none;">
+                <fieldset>
+                  <label for="phone55" class="label">Phone #5</label>
+                  <input name="phone55" type="text" class="form-control text-input" id="phone55"
+                    placeholder="8888888888" required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="file5" style="display:none;">
+                <fieldset>
+                  <label for="file55" class="label">Upload Student Proof #5 (file ext.: jpg, jpeg, png, pdf and max
+                    size: 200kb)</label>
+                  <input name="file55" type="file" class="form-control text-input" id="file55" required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2">
+                <fieldset>
+                  <label for="guide" class="label">Name of Guide</label>
+                  <input name="guide" type="text" class="form-control text-input" id="guide" placeholder="Guide Name"
+                    required>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2">
+                <fieldset>
+                  <label for="sponsorship" class="label">Project Sponsored / Not Sponsored</label>
+                  <select name="sponsorship" type="text" class="form-control selectpicker" id="sponsorship" onchange="myFunction1(this)" required>
+                    <option>Please Select Sponsorship</option>
+                    <option value="Sponsored">Sponsored</option>
+                    <option value="Not Sponsored">Not Sponsored</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="patent" style="display: none;">
+                <fieldset>
+                  <label for="patent1" class="label">In Project Exhibition: Patent(IPR) expert opinion required</label>
+                  <select name="patent1" type="text" class="form-control selectpicker" id="patent1" required>
+                    <option>Please Select Your Choice</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="company" style="display: none;">
+                <fieldset>
+                  <label for="company" class="label">Company Name</label>
+                  <input name="company" type="text" class="form-control text-input" id="company"
+                    placeholder="Company Name">
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2 mb-3" id="nda1" style="display: none;">
+                <fieldset>
+                  <label for="" class="label">Whether Non-disclosure Agreement Signed?</label><br>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="nda" class="radio-input radio1" value="yes" required> Yes
+                    </label>
+                  </div>
+                  <div class="radio mt-1 mx-5">
+                    <label class="label">
+                      <input type="radio" name="nda" class="radio-input" value="no" required> No
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2">
+                <fieldset id="reason">
+                  <label for="reason1" class="label">Will you be able to Demonstrate the Working Project?</label>
+                  <select name="reason1" type="text" class="form-control selectpicker" id="reason1" onchange="myFunction3(this)" required>
+                    <option>Please Select Your Choice</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="reason2" style="display: none;">
+                <fieldset>
+                  <label for="reason2" class="label">Enter your reasons here (Word limit: 200)</label>
+                  <textarea name="reason2" id="reason2" cols="30" rows="10" class="form-control" required></textarea>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2">
+                <fieldset>
+                  <label for="postal" class="label">Paste your abstract here (Word limit: 1000)</label>
+                  <textarea name="postal" id="postal" cols="30" rows="10" class="form-control" required></textarea>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="receiptid" style="display: none;">
+                <fieldset>
+                  <label for="receiptid1" class="label">Receipt ID</label>
+                  <input name="receiptid" type="text" class="form-control text-input" id="receiptid1"
+                    placeholder="Recept ID">
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2" id="ddnumber" style="display: none;">
+                <fieldset>
+                  <label for="ddnumber1" class="label">Demand Draft Number</label>
+                  <input name="ddnumber" type="text" class="form-control text-input" id="ddnumber1"
+                    placeholder="Demand Draft Number">
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2">
+                <fieldset class="data">
+                  <p>
+                  <h3 class="text-center mb-3">Disclaimer</h3>
+                  <ol>
+                    <li>Entry is valid for UG students studying in university/engineering colleges.</li><br>
+                    <li>International Participants should upload Student Identity card along with the details of his
+                      course, university/institute, and country information. </li><br>
+                    <li>The candidate must upload a photo / pdf of the college ID card during the registration process.
+                      In the worst case, candidate can upload any government approved identity proof like Adhar
+                      Card/Driving License/PAN Card.</li><br>
+                    <li>The size of the photo / id card can't be more than 200 kb. Valid format are pdf /jpeg /gif / png
+                      . </li>
+                    <li>Participation will stand to cancel if anyone other than registered candidate appears /represents
+                      during the event and necessary action will be initiated against them. </li><br>
+                    <li>This competition is only for Final Year Engineering students (Students from any branch can take
+                      participation but Projects must be related to CE, EnTC, IT). </li><br>
+                    <li>Project will be evaluated by at least 2 industry judges at the same time in single session or at
+                      different time in two different sessions. </li><br>
+                    <li>The online session/presentation will be held on Microsoft Team Software, so participant must
+                      have this software installed in their devices and should have logged on in it and should be aware
+                      to use it properly. </li><br>
+                    <li>Date and time of Online Session/Presentation will be informed to participants groups one day
+                      before the event via Email and on the website. </li><br>
+                    <li>InC 2021 Concepts team will provide link to join the Session / Presentation along with date and
+                      time.</li><br>
+                    <li>All rights of registration and or cancellation are reserved with PICT. </li>
+                  </ol>
+                  </p>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2">
+                <fieldset>
+                  <div class="data"><input type="checkbox" name="agree" value="1" required>
+                    I have read and I agree to all the Rules.<br>
+                    <input type="checkbox" name="agree1" value="1" required>
+                    I have read and I agree to <a href="assets/Concepts_WEBSITE_RULES_4.pdf" class="data">Concepts Event
+                      Rules.</a>
+                    </p>
+                </fieldset>
+              </div>
+              <div class="col-8 offset-2 mt-2">
+                <fieldset class="center">
+                  <button type="submit" id="form-submit" class="button">Register</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="alert alert-success" role="alert" style="text-align: center" id="success_message"><i
+              class="glyphicon glyphicon-thumbs-up"></i>For any technical assistance feel free to contact :<strong>
+              Vedant Kulkarni : +91 9860807646, Yash Pawar: +91 9423634124</strong>
+          </div>
+          <p><i class="fa fa-copyright"></i> PICT InC 2021 All Rights Reserved | Developed by Web Team of InC </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/form.js"></script>
+  <script>
+    //according to loftblog tut
+    $('.nav li:first').addClass('active');
+
+    var showSection = function showSection(section, isAnimate) {
+      var
+        direction = section.replace(/#/, ''),
+        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+        reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $('body, html').animate({
+          scrollTop: reqSectionPos
+        },
+          800);
+      } else {
+        $('body, html').scrollTop(reqSectionPos);
+      }
+
+    };
+
+    var checkSection = function checkSection() {
+      $('.section').each(function () {
+        var
+          $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+          var
+            currentId = $this.data('section'),
+            reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+          reqLink.closest('li').addClass('active').
+            siblings().removeClass('active');
+        }
+      });
+    };
+
+    $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+      if ($(e.target).hasClass('external')) {
+        return;
+      }
+      e.preventDefault();
+      $('#menu').removeClass('active');
+      showSection($(this).attr('href'), true);
+    });
+
+    $(window).scroll(function () {
+      checkSection();
+    });
+  </script>
+</body>
+
+</html>

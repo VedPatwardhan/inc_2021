@@ -55,6 +55,12 @@ img {
     height: 2em;
 }
 
+.img-logo {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+}
+
 em {
     text-transform: none;
 }

@@ -1,0 +1,64 @@
+/* ---- reset ---- */
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    padding-top: 100px;
+    background-image: url(../images/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.sctr {
+    font-size: 0.35em;
+    font-weight: 300;
+}
+
+.pict {
+    font-size: 0.5em;
+    font-weight: 500;
+}
+
+.row-header {
+    position: absolute;
+    width: 100vw;
+    color: white;
+}
+
+h1 {
+    padding-top: 100px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h1 a {
+    color: #fff;
+}
+
+.about-us {
+    color: white;
+    text-align: justify;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+}
+
+em {
+    text-transform: none;
+}
+
+.yellow {
+    color: #f5a425;
+}

@@ -16,9 +16,10 @@
     width: 100%;
 }
 
-section {
-    /* width: 100vw; */
-}
+
+/* section.why-us {
+    background-image: none;
+} */
 
 .sctr {
     font-size: 0.35em;

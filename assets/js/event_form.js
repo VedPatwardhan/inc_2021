@@ -17,6 +17,25 @@ function myFunction21(domain1) {
         document.getElementById("email5").style.display = "none";
         document.getElementById("phone5").style.display = "none";
     }
+    // if (document.getElementById("domain").value = "Pratibha") {
+    //     let noofmem = document.getElementById("noofmem");
+    //     while (noofmem.firstChild) {
+    //         //The list is LIVE so it will re-index each call
+    //         noofmem.removeChild(noofmem.firstChild);
+    //     }
+    //     console.log("Made it here");
+    //     let x = 2;
+    //     let element = document.createElement('option');
+    //     element.innerText = "Please select Number of Members";
+    //     noofmem.appendChild(element);
+    //     while (x <= 4) {
+    //         let element1 = document.createElement('option');
+    //         element1.setAttribute('value', x);
+    //         element1.innerText = x;
+    //         noofmem.appendChild(element1);
+    //         x++;
+    //     }
+    // }
 }
 
 function checkphone() {
@@ -211,6 +230,11 @@ function myFunction(noofmem) {
         document.getElementById("gender3").style.display = "none";
         document.getElementById("gender4").style.display = "none";
         document.getElementById("gender5").style.display = "none";
+        document.getElementById("file1").style.display = "none";
+        document.getElementById("file2").style.display = "none";
+        document.getElementById("file3").style.display = "none";
+        document.getElementById("file4").style.display = "none";
+        document.getElementById("file5").style.display = "none";
     }
 }
 
@@ -346,6 +370,23 @@ function myFunction22(domain1) {
         document.getElementById("pradnya_rules").style.display = "none";
         document.getElementById("daksha_rules").style.display = "none";
         document.getElementById("yukti_rules").style.display = "none";
+        let noofmem = document.getElementById("noofmem");
+        while (noofmem.firstChild) {
+            //The list is LIVE so it will re-index each call
+            noofmem.removeChild(noofmem.firstChild);
+        }
+        console.log("Made it here");
+        let x = 2;
+        let element = document.createElement('option');
+        element.innerHTML = "Please select Number of Members";
+        noofmem.appendChild(element);
+        while (x <= 4) {
+            let element1 = document.createElement('option');
+            element1.setAttribute('value', x.toString());
+            element1.innerHTML = x;
+            noofmem.appendChild(element1);
+            x++;
+        }
 
     }
     if (subevent == "Daksha") {

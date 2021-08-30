@@ -91,19 +91,19 @@ var stateObject = {
     },
 
 }
-window.onload = function () {
+window.onload = function() {
     var domain = document.getElementById("domain"),
         subdomain = document.getElementById("subdomain");
     /* citySel = document.getElementById("citySel"); */
     for (var state in stateObject) {
         domain.options[domain.options.length] = new Option(state, state);
     }
-    domain.onchange = function () {
+    domain.onchange = function() {
         subdomain.length = 1; // remove all options bar first
         /* citySel.length = 1; */ // remove all options bar first
         if (this.selectedIndex < 1) {
             subdomain.options[0].text = "Please select domain first"
-            /* citySel.options[0].text = "Please select county first" */
+                /* citySel.options[0].text = "Please select county first" */
             return; // done   
         }
         subdomain.options[0].text = "Please select sub-domain"
@@ -137,7 +137,7 @@ window.onload = function () {
    } */
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
     $('#abstract').simplyCountable({
         counter: '#counter2',
         countType: 'words',
@@ -184,25 +184,21 @@ function checkphone() {
                 if (no1.length == 10) {
                     //alert("Please check your details \n\n name:"+name+"\n\n E-mail:"+em+"\n\n Phone Number:"+no+"\n\n");
                     return true;
-                }
-                else {
+                } else {
                     alert("invalid phone number 2");
                     return false;
                 }
-            }
-            else {
+            } else {
                 alert("invalid Email-id 2");
                 return false;
             }
 
 
-        }
-        else {
+        } else {
             alert("invalid phone number 1");
             return false;
         }
-    }
-    else {
+    } else {
         alert("invalid Email-id 1");
         return false;
     }
@@ -238,8 +234,7 @@ function myFunction(noofmem) {
         document.getElementById("file3").style.display = "none";
         document.getElementById("file4").style.display = "none";
         document.getElementById("file5").style.display = "none";
-    }
-    else if (noofmem1 == '3') {
+    } else if (noofmem1 == '3') {
         document.getElementById("name1").style.display = "block";
         document.getElementById("gender1").style.display = "block";
         document.getElementById("email1").style.display = "block";
@@ -265,8 +260,7 @@ function myFunction(noofmem) {
         document.getElementById("phone5").style.display = "none";
         document.getElementById("file4").style.display = "none";
         document.getElementById("file5").style.display = "none";
-    }
-    else if (noofmem1 == '4') {
+    } else if (noofmem1 == '4') {
         document.getElementById("name1").style.display = "block";
         document.getElementById("gender1").style.display = "block";
         document.getElementById("email1").style.display = "block";
@@ -292,8 +286,7 @@ function myFunction(noofmem) {
         document.getElementById("email5").style.display = "none";
         document.getElementById("phone5").style.display = "none";
         document.getElementById("file5").style.display = "none";
-    }
-    else if (noofmem1 == '5') {
+    } else if (noofmem1 == '5') {
         document.getElementById("name1").style.display = "block";
         document.getElementById("gender1").style.display = "block";
         document.getElementById("email1").style.display = "block";
@@ -319,8 +312,7 @@ function myFunction(noofmem) {
         document.getElementById("file3").style.display = "block";
         document.getElementById("file4").style.display = "block";
         document.getElementById("file5").style.display = "block";
-    }
-    else {
+    } else {
         document.getElementById("name1").style.display = "none";
         document.getElementById("email1").style.display = "none";
         document.getElementById("phone1").style.display = "none";
@@ -336,6 +328,11 @@ function myFunction(noofmem) {
         document.getElementById("name5").style.display = "none";
         document.getElementById("email5").style.display = "none";
         document.getElementById("phone5").style.display = "none";
+        document.getElementById("gender1").style.display = "none";
+        document.getElementById("gender2").style.display = "none";
+        document.getElementById("gender3").style.display = "none";
+        document.getElementById("gender4").style.display = "none";
+        document.getElementById("gender5").style.display = "none";
     }
 }
 
@@ -346,14 +343,14 @@ function myFunction1(company) {
         document.getElementById("nda1").style.display = "block";
         document.getElementById("patent").style.display = "none";
 
-    }
-    else {
+    } else {
         document.getElementById("patent").style.display = "block";
 
         document.getElementById("company").style.display = "none";
         document.getElementById("nda1").style.display = "none";
     }
 }
+
 function disp(origin) {
     var country = document.getElementById("country");
     var city = document.getElementById("city");
@@ -367,8 +364,7 @@ function disp(origin) {
         district.style.display = "block";
         city.style.display = "block";
 
-    }
-    else if (origin.value == "International") {
+    } else if (origin.value == "International") {
 
         country.style.display = "block";
         country.setAttribute('value', "");
@@ -389,13 +385,11 @@ function myFunction2(payment) {
         document.getElementById("ddnumber").style.display = "block";
         document.getElementById("receiptid").style.display = "none";
         //document.getElementById("ddnumber").style.required = "true";
-    }
-    else if (payment1 == 'paid') {
+    } else if (payment1 == 'paid') {
         document.getElementById("receiptid").style.display = "block";
         document.getElementById("ddnumber").style.display = "none";
         //document.getElementById("receiptid").style.required = "true";
-    }
-    else if (payment1 != 'dd not paid') {
+    } else if (payment1 != 'dd not paid') {
         document.getElementById("ddnumber").style.display = "none";
         document.getElementById("receiptid").style.display = "none";
         //document.getElementById("ddnumber").style.required = "false";
@@ -408,13 +402,12 @@ function myFunction3(company) {
     if (company1 == 'No') {
         document.getElementById("reason2").style.display = "block";
 
-    }
-    else {
+    } else {
         document.getElementById("reason2").style.display = "none";
     }
 }
 
-var wordLen = 1200;  // Maximum word length
+var wordLen = 1200; // Maximum word length
 function checkWordLen(obj) {
     var len = obj.value.split("/[\s]+/");
     if (len.length > wordLen) {

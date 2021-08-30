@@ -157,6 +157,11 @@ input[type=checkbox] {
     height: 30px !important;
 }
 
+
+/* .radio1{
+	transform: scale(1.25);
+} */
+
 hr {
     color: #fff;
 }
@@ -169,6 +174,23 @@ ol {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.warning-text {
+    text-align: center;
+    color: red;
+    align-items: center;
+    justify-content: center;
+}
+
+.instr-text {
+    text-align: center;
+    color: yellowgreen;
+}
+
+.bold-text {
+    color: yellowgreen;
+    font-size: 20px;
 }
 
 em {

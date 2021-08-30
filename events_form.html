@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Register for Events | PICT InC 2021</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/util.css">
+    <link rel="stylesheet" href="assets/css/form_style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+</head>
+
+<body>
+    <!--header-->
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+            <img src="./assets/images/pict.png" alt="" class="mr-3 img-logo">
+            <a href="#"><em>InC</em> 2021</a> <span class="date-head">Dates : 24th - 26th September 2021</span>
+        </div>
+    </header>
+
+    <section class="section contact" data-section="section6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Registration Form: Events</h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <form id="contact" action="" method="post" class="">
+                        <div class="row">
+                            <div class="col-8 offset-2 mt-4">
+                                <fieldset>
+                                    <label for="event" class="label">Event</label>
+                                    <select name="event" class="form-control selectpicker" id="event" onchange="myFunction22(this)" required>
+                    <option value="selected">Select Event</option>
+                    <option value="Concepts">Concepts</option>
+                    <option value="Pratibha">Pratibha</option>
+                    <option value="Naipunya">Naipunya</option>
+                    <option value="Tantra">Tantra</option>
+                    <option value="Yukti">Yukti</option>
+                    <option value="Daksha">Daksha</option>
+                    <option value="Lakshya">Lakshya</option>
+                    <option value="Pradnya">Pradnya</option>
+                  </select>
+                                </fieldset>
+                            </div>
+                            <!-- <div class="row"> -->
+                            <!-- <div class="col-8 offset-2 mt-4"></div> -->
+                            <div class="col-8 offset-2 mt-2">
+                                <div class="data" id="slotcheck" style="display: none;">
+
+                                    <fieldset>
+                                        <label class="label">Slot</label>
+                                        <select name="slot" id="slotcheck" class="form-control selectpicker">
+                          <option value="" selected="selected">Select the Slot</option>
+								          <option value="Junior Slot">Junior(FE/SE) Slot</option>
+                          <option value="Senior Slot">Senior(TE/BE) Slot</option>
+                        </select>
+                                    </fieldset>
+
+                                </div>
+
+                            </div>
+                            <!-- <div class="col-lg-3 col"></div> -->
+                        </div>
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset>
+                                <label for="college" class="label">Name of College</label>
+                                <input name="college" type="text" class="form-control text-input" id="college" placeholder="College Name" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset>
+                                <label for="" class="label">Origin</label><br>
+                                <div class="radio mt-1 mx-5">
+                                    <label class="label">
+                      <input type="radio" name="nation" class="radio-input" onclick="disp(this)" value="National" required> National
+                    </label>
+                                </div>
+                                <div class="radio mt-1 mx-5">
+                                    <label class="label">
+                      <input type="radio" name="nation" class="radio-input" onclick="disp(this)" value="International" required>
+                      International
+                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-4">
+                            <fieldset>
+                                <label for="place" class="label">Place</label>
+                                <div class="input-group">
+                                    <input name="taluka" placeholder="City" class="form-control" id="city" type="text" required>
+                                    <input name="district" placeholder="District" class="form-control" id="district" type="text" required>
+                                    <select name="state" class="form-control selectpicker" id="state" required>
+                      <option value="">State</option>
+                      <option value="Andhra Pradesh">Andhra Pradesh</option>
+                      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                      <option value="Assam">Assam</option>
+                      <option value="Bihar">Bihar</option>
+                      <option value="Chhattisgarh">Chhattisgarh</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Goa">Goa</option>
+                      <option value="Gujarat">Gujarat</option>
+                      <option value="Haryana">Haryana</option>
+                      <option value="Himachal Pradesh">Himachal Pradesh</option>
+                      <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                      <option value="Jharkhand">Jharkhand</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Kerala">Kerala</option>
+                      <option value="Madhya Pradesh">Madhya Pradesh</option>
+                      <option value="Maharashtra">Maharashtra</option>
+                      <option value="Manipur">Manipur</option>
+                      <option value="Meghalaya">Meghalaya</option>
+                      <option value="Mizoram">Mizoram</option>
+                      <option value="Nagaland">Nagaland</option>
+                      <option value="Orissa">Orissa</option>
+                      <option value="Punjab">Punjab</option>
+                      <option value="Rajasthan">Rajasthan</option>
+                      <option value="Tamil Nadu">Tamil Nadu</option>
+                      <option value="Telangana">Telangana</option>
+                      <option value="Tripura">Tripura</option>
+                      <option value="Uttar Pradesh">Uttar Pradesh</option>
+                      <option value="Uttarakhand">Uttarakhand</option>
+                      <option value="West Bengal">West Bengal</option>
+                    </select>
+                                    <input name="Country" placeholder="Country" value="India" id="country" class="form-control" type="text" required>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset>
+                                <label for="" class="label">Select Locality</label><br>
+                                <div class="radio mt-1 mx-5">
+                                    <label class="label">
+                      <input type="radio" name="locality" value="Urban" required> Urban
+                    </label>
+                                </div>
+                                <div class="radio mt-1 mx-5">
+                                    <label class="label">
+                      <input type="radio" name="locality" value="Non Urban" required> Non-Urban
+                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-4">
+                            <fieldset>
+                                <label for="noofmem" class="label">Number of Members</label>
+                                <select name="noofmem" type="text" class="form-control selectpicker" id="noofmem" onchange="myFunction(this)" required>
+                    <option>Please select Number of Members</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2" id="name1" style="display:none;">
+                            <fieldset>
+                                <label for="name11" class="label">Full Name #1</label>
+                                <input name="name11" type="text" class="form-control text-input" id="name11" placeholder="Full Name" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2" id="gender1" style="display:none;">
+                            <fieldset>
+                                <label for="" class="label">Gender #1</label><br>
+                                <div class="radio mt-1 mx-5">
+                                    <label class="label">
+                      <input type="radio" name="gender11" class="radio-input radio1" value="Male" required> Male
+                    </label>
+                                </div>
+                                <div class="radio mt-1 mx-5">
+                                    <label class="label">
+                      <input type="radio" name="gender11" class="radio-input" value="Female" required> Female
+                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-4" id="email1" style="display:none;">
+                            <fieldset>
+                                <label for="email11" class="label">Email #1</label>
+                                <input name="email11" type="text" class="form-control text-input" id="email11" placeholder="E-Mail Address" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2" id="phone1" style="display:none;">
+                            <fieldset>
+                                <label for="phone11" class="label">Phone #1</label>
+                                <input name="phone11" type="text" class="form-control text-input" id="phone11" placeholder="8888888888" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2" id="file1" style="display:none;">
+                            <fieldset>
+                                <label for="file11" class="label">Upload Student Proof #1 (file ext.: jpg, jpeg, png, pdf and max
+                    size: 200kb)</label>
+                                <input name="file11" type="file" class="form-control text-input" id="file11" required>
+                            </fieldset>
+                        </div>
+
+                        <div class="col-8 offset-2 mt-2" id="name2" style="display:none;">
+                            <fieldset>
+                                <label for="name22" class="label">Full Name #2</label>
+                                <input name="name22" type="text" class="form-control text-input" id="name22" placeholder="Full Name" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2" id="gender2" style="display:none;">
+                            <fieldset>
+                                <label for="" class="label">Gender #2</label><br>
+                                <div class="radio mt-1 mx-5">
+                                    <label class="label">
+                      <input type="radio" name="gender22" class="radio-input radio1" value="Male" required> Male
+                    </label>
+                                </div>
+                                <div class="radio mt-1 mx-5">
+                                    <label class="label">
+                      <input type="radio" name="gender22" class="radio-input" value="Female" required> Female
+                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-4" id="email2" style="display:none;">
+                            <fieldset>
+                                <label for="email22" class="label">Email #2</label>
+                                <input name="email22" type="text" class="form-control text-input" id="email22" placeholder="E-Mail Address" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2" id="phone2" style="display:none;">
+                            <fieldset>
+                                <label for="phone22" class="label">Phone #2</label>
+                                <input name="phone22" type="text" class="form-control text-input" id="phone22" placeholder="8888888888" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2" id="file2" style="display:none;">
+                            <fieldset>
+                                <label for="file22" class="label">Upload Student Proof #2 (file ext.: jpg, jpeg, png, pdf and max
+                    size: 200kb)</label>
+                                <input name="file22" type="file" class="form-control text-input" id="file22" required>
+                            </fieldset>
+                        </div>
+
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset class="data">
+                                <p>
+                                    <h3 class="text-center mb-3">Disclaimer</h3>
+                                    <ol>
+                                        <li>Entry is valid for UG / PG students studying in university/engineering colleges.</li><br>
+                                        <li>International Participants should upload Student Identity card along with the details of his course, university/institute, and country information. </li><br>
+                                        <li>The candidate must upload a photo / pdf of the college ID card during the registration process. In the worst case, candidate can upload any government approved identity proof like Adhar Card/Driving License/PAN
+                                            Card.
+                                        </li><br>
+                                        <li>The size of the photo / id card can't be more than 200 kb. Valid format are pdf /jpeg /gif / png . </li><br>
+                                        <li>Participation will stand to cancel if anyone other than registered candidate appears /represents during the event and necessary action will be initiated against them. </li><br>
+                                        <li>All rights of registration and or cancellation are reserved with PICT. </li>
+                                    </ol>
+                                </p>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset>
+                                <div class="data"><input type="checkbox" name="agree" value="1" required> I have read and I agree to all the Rules.<br>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset>
+                                <div class="data" id="yukti_rules" style="display:none;">
+                                    <input type="checkbox" id="yukti_rules1" name="agree1" value="1" required> I have read and I agree to <a href="assets/Yukti_Rules.pdf" class="data"> Yukti Event Rules.</a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset>
+                                <div class="data" id="tantra_rules" style="display:none;">
+                                    <input type="checkbox" id="tantra_rules1" name="agree2" value="1" required> I have read and I agree to <a href="assets/Tantra_Rules.pdf" class="data"> Tantra Event Rules.</a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset>
+                                <div class="data" id="pratibha_rules" style="display:none;">
+                                    <input type="checkbox" id="pratibha_rules1" name="agree3" value="1" required> I have read and I agree to <a href="assets/Pratibha_Rules.pdf" class="data"> Pratibha Event Rules.</a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset>
+                                <div class="data" id="pradnya_rules" style="display:none;">
+                                    <input type="checkbox" id="pradnya_rules1" name="agree4" value="1" required> I have read and I agree to <a href="assets/Pradnya_Rules.pdf" class="data"> Pradnya Event Rules.</a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset>
+                                <div class="data" id="naipunya_rules" style="display:none;">
+                                    <input type="checkbox" id="naipunya_rules1" name="agree5" value="1" required> I have read and I agree to <a href="assets/Naipunya_Rules.pdf" class="data"> Naipunya Event Rules.</a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset>
+                                <div class="data" id="lakshya_rules" style="display:none;">
+                                    <input type="checkbox" id="lakshya_rules1" name="agree6" value="1" required> I have read and I agree to <a href="assets/Lakshya_Rules.pdf" class="data"> Lakshya Event Rules.</a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset>
+                                <div class="data" id="daksha_rules" style="display:none;">
+                                    <input type="checkbox" id="daksha_rules1" name="agree7" value="1" required> I have read and I agree to <a href="assets/Daksha_Rules.pdf" class="data"> Daksha Event Rules.</a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-8 offset-2 mt-2">
+                            <fieldset class="center">
+                                <button type="submit" id="form-submit" class="button">Register</button>
+                            </fieldset>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-success" role="alert" style="text-align: center" id="success_message"><i class="glyphicon glyphicon-thumbs-up"></i>For any technical assistance feel free to contact :<strong>
+              Vedant Kulkarni : +91 9860807646, Yash Pawar: +91 9423634124</strong>
+                    </div>
+                    <p><i class="fa fa-copyright"></i> PICT InC 2021 All Rights Reserved | Developed by Web Team of InC </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/event_form.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+            var
+                direction = section.replace(/#/, ''),
+                reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+                reqSectionPos = reqSection.offset().top - 0;
+
+            if (isAnimate) {
+                $('body, html').animate({
+                        scrollTop: reqSectionPos
+                    },
+                    800);
+            } else {
+                $('body, html').scrollTop(reqSectionPos);
+            }
+
+        };
+
+        var checkSection = function checkSection() {
+            $('.section').each(function() {
+                var
+                    $this = $(this),
+                    topEdge = $this.offset().top - 80,
+                    bottomEdge = topEdge + $this.height(),
+                    wScroll = $(window).scrollTop();
+                if (topEdge < wScroll && bottomEdge > wScroll) {
+                    var
+                        currentId = $this.data('section'),
+                        reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+                    reqLink.closest('li').addClass('active').
+                    siblings().removeClass('active');
+                }
+            });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function(e) {
+            if ($(e.target).hasClass('external')) {
+                return;
+            }
+            e.preventDefault();
+            $('#menu').removeClass('active');
+            showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function() {
+            checkSection();
+        });
+    </script>
+</body>
+
+</html>

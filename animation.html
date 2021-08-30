@@ -10,6 +10,8 @@
 
     <title>PICT InC 2021</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -76,7 +78,7 @@
                         <h2>About Us</h2>
                     </div>
                 </div>
-                <div class="col-md-6 container about-us">
+                <div class="col-md-6 container about-us" data-aos="fade-up" data-aos-duration="1000">
 
                     Impetus and Concepts (InC) is a flagship technical event of Pune Institute of Computer Technology (PICT), Pune, which is going to be held online from 24th to 26th of September 2021. InC is an intercollegiate International level competition which has been
                     catching the attention of corporate giants for Quality of projects and an opportunity to recruit/mentor young talented budding entrepreneurs. Every year InC sets a New Benchmark and provides an opportunity to students to realize their
@@ -474,7 +476,9 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
     <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="assets/js/animation.js"></script>
@@ -530,6 +534,8 @@
         $(window).scroll(function() {
             checkSection();
         });
+
+        AOS.init();
     </script>
 </body>
 

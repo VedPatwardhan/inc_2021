@@ -84,7 +84,6 @@ em {
 }
 
 .section:nth-of-type(3) h2:before,
-.section:nth-of-type(4) h2:before,
 .section:nth-of-type(5) h2:before,
 .section:nth-of-type(6) h2:before {
     background-color: rgba(250, 250, 250, 0.0);
@@ -99,16 +98,20 @@ em {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    scrollbar-width: thin;
+    justify-content: center;
 }
 
 .card {
-    min-width: 220px;
-    min-height: 220px;
+    min-width: 180px;
+    min-height: 180px;
     background: none;
     border: 1px solid rgba(250, 250, 250, 0.1);
-    margin: 20px;
-    padding: 20px;
+    margin: 20px !important;
+    padding: 20px !important;
+}
+
+h4 {
+    font-size: 1.8em !important;
 }
 
 .registration {
@@ -117,15 +120,30 @@ em {
 }
 
 .registration-button {
-    width: 400px;
-    height: 50px;
+    /* width: 100%; */
+    margin-left: 40%;
+    margin-right: 40%;
+    height: 70px;
+    margin: 10px;
     color: #fff;
     background: none;
     border-radius: 10px;
     border: 1px solid white;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 1.2em;
     transition: 0.5s;
+}
+
+.regbtn {
+    color: #fff;
+}
+
+.button-big {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.5em;
 }
 
 .registration-header {
@@ -136,6 +154,15 @@ em {
 .registration-button:hover {
     border: 1px solid #f5a425;
     color: #f5a425;
+}
+
+.owl-dots {
+    display: none !important;
+}
+
+.sponsors {
+    color: #fff;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 1070px) {

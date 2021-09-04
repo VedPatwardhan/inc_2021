@@ -110,6 +110,21 @@ em {
     padding: 20px !important;
 }
 
+.card1 {
+    width: 30%;
+    min-height: 180px;
+    background: none;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    margin: 20px !important;
+    padding: 20px !important;
+}
+
+#tabs-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 h4 {
     font-size: 1.8em !important;
 }
@@ -198,6 +213,12 @@ h4 {
 
 .social-link-ele {
     margin: 5%;
+}
+
+.video-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 1070px) {

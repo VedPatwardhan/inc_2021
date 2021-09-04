@@ -21,7 +21,7 @@
         margin: 30,
         nav: true,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive: {
             0: {
@@ -34,10 +34,36 @@
                 items: 3
             },
             1000: {
-                items: 4
+                items: 3
             },
             1200: {
-                items: 5
+                items: 3
+            }
+        }
+    })
+
+    $('.owl-carousel1').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            550: {
+                items: 1
+            },
+            750: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            },
+            1200: {
+                items: 1
             }
         }
     })

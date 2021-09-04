@@ -11,6 +11,9 @@ body {
     height: 200px;
     margin: 80px;
     perspective: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .scene-small {

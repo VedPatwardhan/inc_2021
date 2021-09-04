@@ -249,6 +249,15 @@ h4 {
     .date {
         margin-top: 40px;
     }
+    .video-tabs {
+        flex-direction: column;
+    }
+    .video-tabs li {
+        margin-top: 20px;
+    }
+    iframe {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 720px) {

@@ -261,4 +261,8 @@ body::-webkit-scrollbar-thumb,
     
     
     
-  }*0/
+  }*/
+
+.card-link {
+    color: #fff;
+}

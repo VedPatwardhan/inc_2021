@@ -304,7 +304,7 @@ h4 {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     .main-menu {
         padding-right: 0!important;
     }
@@ -329,14 +329,14 @@ h4 {
     }
 }
 
-@media screen and (max-width: 1200px) and (max-height: 400px) {
+@media screen and (max-width: 1400px) and (max-height: 400px) {
     nav[role="navigation"].active {
         max-height: calc(80px + 100vh);
         overflow-y: auto;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .main-nav li:hover a,
     .main-nav li.active a {
         border: 2px solid transparent;
@@ -344,7 +344,7 @@ h4 {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     a.menu-link {
         float: right;
         display: block;
@@ -394,7 +394,7 @@ h4 {
     nav[role="navigation"] li.active a {
         color: #f5a425;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1400px) {
         .js nav[role="navigation"] {
             max-height: none;
         }

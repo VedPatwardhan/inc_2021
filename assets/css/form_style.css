@@ -73,6 +73,10 @@ section.contact form select {
     appearance: none;
 }
 
+option {
+    color: black;
+}
+
 section.contact form input:focus,
 section.contact form textarea:focus,
 section.contact form select:focus {

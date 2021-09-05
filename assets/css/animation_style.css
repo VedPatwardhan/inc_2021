@@ -16,6 +16,11 @@
     width: 100%;
 }
 
+#showcase .container h1 {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
 
 /* section.why-us {
     background-image: none;

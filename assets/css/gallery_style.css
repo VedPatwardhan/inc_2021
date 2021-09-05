@@ -195,14 +195,3 @@ h1 {
     display: block;
     width: 32px;
 }
-
-#showcase {
-    margin: 0;
-    padding: 0;
-    background: #172238;
-    width: 100%;
-    height: 70vh;
-    position: relative;
-    overflow-y: hidden;
-    background: url('../images/contact-bg.jpg') no-repeat center/cover;
-}

@@ -133,46 +133,10 @@ em {
     font-weight: 600;
 }
 
-#showcase {
-    margin: 0;
-    padding: 0;
-    background: #172238;
-    width: 100%;
-    height: 65vh;
-    position: relative;
-    overflow-y: hidden;
-    background: url('../images/contact-bg.jpg') no-repeat center/cover;
-}
-
 img {
     display: inline-block;
     width: 6.5em;
     height: 6.5em;
-}
-
-#showcase .container {
-    margin-top: 12vh;
-    text-align: center;
-    color: #fff;
-}
-
-#showcase .container p {
-    color: #d99427;
-    font-size: 1em;
-    margin: 0;
-}
-
-#showcase .container h4 {
-    margin: 0.5;
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding: 10px;
-}
-
-#showcase .container h1 {
-    color: #ffcc33;
-    font-size: 2.5rem;
-    font-weight: 800;
 }
 
 #eve {
@@ -295,26 +259,12 @@ section .content p[data-scroll="in"] {
     .container {
         padding: 0 1.5rem;
     }
-    #showcase .container h4 {
-        margin: 0.5;
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
     section .content h2 {
         font-size: 2rem;
         font-weight: 500;
     }
-    #showcase .container h1 {
-        font-size: 1.9rem;
-        font-weight: 800;
-    }
     section .content h3 {
         font-size: 1.3rem;
-    }
-    img {
-        display: inline-block;
-        width: 5.5em;
-        height: 5.5em;
     }
     .date-head {
         margin-left: 2px;
@@ -325,26 +275,6 @@ section .content p[data-scroll="in"] {
 }
 
 @media screen and (max-width: 575px) {
-    img {
-        display: inline-block;
-        width: 5em;
-        height: 5em;
-    }
-    #showcase .container {
-        margin-top: 12vh;
-    }
-    #showcase .container p {
-        font-size: 1.1rem;
-    }
-    #showcase .container h4 {
-        margin: 0.5;
-        font-size: 1.3rem;
-        font-weight: 400;
-    }
-    #showcase .container h1 {
-        font-size: 1.7rem;
-        font-weight: 800;
-    }
     section .content h2 {
         font-size: 1.8rem;
         font-weight: 450;
@@ -355,23 +285,6 @@ section .content p[data-scroll="in"] {
 }
 
 @media screen and (max-width: 376px) {
-    img {
-        display: inline-block;
-        width: 5em;
-        height: 5em;
-    }
-    #showcase .container p {
-        font-size: 1rem;
-    }
-    #showcase .container h4 {
-        margin: 0.5;
-        font-size: 1.2rem;
-        font-weight: 350;
-    }
-    #showcase .container h1 {
-        font-size: 1.5rem;
-        font-weight: 650;
-    }
     section .content h2 {
         font-size: 1.8rem;
         font-weight: 450;
@@ -382,23 +295,6 @@ section .content p[data-scroll="in"] {
 }
 
 @media screen and (max-width: 325px) {
-    img {
-        display: inline-block;
-        width: 4em;
-        height: 4em;
-    }
-    #showcase .container p {
-        font-size: 1rem;
-    }
-    #showcase .container h4 {
-        margin: 0.5;
-        font-size: 1.2rem;
-        font-weight: 250;
-    }
-    #showcase .container h1 {
-        font-size: 1.5rem;
-        font-weight: 450;
-    }
     section .content h2 {
         font-size: 1.8rem;
         font-weight: 450;

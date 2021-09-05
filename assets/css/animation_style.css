@@ -21,6 +21,10 @@
     margin-bottom: 30px;
 }
 
+footer p {
+    text-transform: none;
+}
+
 
 /* section.why-us {
     background-image: none;

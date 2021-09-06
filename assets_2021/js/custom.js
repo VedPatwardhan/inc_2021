@@ -118,10 +118,14 @@
         function initializeClock(endtime) {
             var timeinterval = setInterval(function() {
                 var t = getTimeRemaining(endtime);
-                document.querySelector(".days > .value").innerText = t.days;
-                document.querySelector(".hours > .value").innerText = t.hours;
-                document.querySelector(".minutes > .value").innerText = t.minutes;
-                document.querySelector(".seconds > .value").innerText = t.seconds;
+                if (document.querySelector(".days > .value"))
+                    document.querySelector(".days > .value").innerText = t.days;
+                if (document.querySelector(".hours > .value"))
+                    document.querySelector(".hours > .value").innerText = t.hours;
+                if (document.querySelector(".minutes > .value"))
+                    document.querySelector(".minutes > .value").innerText = t.minutes;
+                if (document.querySelector(".seconds > .value"))
+                    document.querySelector(".seconds > .value").innerText = t.seconds;
                 if (t.total <= 0) {
                     clearInterval(timeinterval);
                 }
